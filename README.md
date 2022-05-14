@@ -149,7 +149,8 @@ and we recommend you use them as well.
 
 This pattern, when you first encounter it, is tricky to wrap your head around.
 Don't worry if it doesn't make total sense yet — it will become clearer as
-you continue through the curriculum. You might also want to read the excellent
+you continue through the curriculum. You might also want to read the ex
+cellent
 accepted answer in [this Stack Overflow thread][so].
 
 Let's take a look at what that event object looks like. Enter the code above
@@ -168,6 +169,7 @@ Now that we know the code the event uses to identify the left arrow key, we can
 write the JavaScript code to move the dodger left when the key is pressed:
 
 ```javascript
+
 document.addEventListener("keydown", function (event) {
   if (event.key === "ArrowLeft") {
     const leftNumbers = dodger.style.left.replace("px", "");
